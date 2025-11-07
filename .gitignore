@@ -1,0 +1,15 @@
+# Mbed build
+BUILD/
+*.bin
+*.elf
+*.hex
+mbed-os/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs/host outputs
+**/host/sent_frames/
+**/host/*.csv
+**/host/*_stream.s16le
