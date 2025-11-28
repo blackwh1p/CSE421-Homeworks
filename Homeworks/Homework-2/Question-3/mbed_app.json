@@ -4,7 +4,8 @@
       "*": {
         "target.c_lib": "small",
         "target.printf_lib": "minimal-printf",
-        "platform.minimal-printf-enable-floating-point": false,
+        "platform.minimal-printf-enable-floating-point": true,
+        "target.include_dirs": ["Extra/CMSIS-DSP/Include"],
         "platform.stdio-minimal-console-only": true
       }
     }
