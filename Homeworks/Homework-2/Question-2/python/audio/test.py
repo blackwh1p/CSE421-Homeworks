@@ -90,7 +90,7 @@ for feats, label in zip(test_mfcc_features, test_labels):
 ser.close()
 
 if total > 0:
-    acc = correct / total
-    print(f"\nAccuracy over UART/STM32: {correct}/{total} = {acc:.3f}")
+    acc = correct * 100 / total
+    print(f"\nAccuracy over UART/STM32: {correct} * {100} / {total} = %{acc:.3f}")
 else:
     print("No valid samples tested.")

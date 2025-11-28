@@ -50,8 +50,8 @@ for i, idx in enumerate(indices):
     # We must Transpose (.T) the image so the byte stream matches the MCU's reading logic.
     # This ensures the MCU calculates features on a "Normal 7", not a "Flipped 7".
     
-    img_for_mcu = img.T  # <--- THIS IS THE KEY FIX
-    ser.write(img_for_mcu.tobytes())
+    #img_for_mcu = img.T  # <--- THIS IS THE KEY FIX
+    ser.write(img.tobytes())
 
     # 3. Receive Prediction
     resp = ser.read(1)
