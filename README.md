@@ -12,9 +12,17 @@ Her ödev, kendi klasörü içinde **kodları**, **veri dosyalarını** ve **rap
 CSE421-Homeworks/
 │
 ├── homework1/
-│ ├── question1/ # STM32 internal temperature sensor uygulaması
+│ ├── question1/ # STM32 internal temperature sensor application
 │ ├── question2/ # MFCC feature extraction (audio / accelerometer)
-│ └── README.md ya da rapor.pdf # Homework 1 raporu ve proje açıklaması
+│ └── hw1_report.md or hw1_report.pdf/ # Homework 1 Report
 │
-└── README.md # (Bu dosya)
+│
+├── homework2/
+│ ├── question1/ # Human Activity Recognition via Accelerometer Data on Bayes Classifier
+│ ├── question2/ # Keyword Spotting from Audio Signals on kNN Classifier
+│ ├── question3/ # Handwritten Digit Recognition from Digital Images on Desicion Tree Classifier
+│ └── hw2_report.md or hw2_report.pdf/ # Homework 2 Report
+│
+│
+└── README.md # (This file)
 ```
