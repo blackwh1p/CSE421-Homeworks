@@ -1,82 +1,54 @@
 import os
 import numpy as np
 import pandas as pd
-import serial
-import struct
-from sklearn2c import LinearRegressor
+from sklearn.model_selection import train_test_split
+# IMPORTANT: We import from sklearn2c instead of sklearn.linear_model
+from sklearn2c import LinearRegressor 
+from sklearn.metrics import mean_absolute_error
+from matplotlib import pyplot as plt
 
-# --- CONFIG ---
-PORT = "COM6"  # Ensure this is correct
-BAUD = 115200
-
+# --- 1. SETUP PATHS ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(script_dir, "../temperature_pred_linreg.joblib")
 csv_path = os.path.join(script_dir, "dataset/temperature_dataset.csv")
+model_save_path = os.path.join(script_dir, "../temperature_pred_linreg.joblib")
 
-# --- LOAD DATA ---
-print("Loading model and dataset...")
-linear = LinearRegressor.load(model_path)
-df = pd.read_csv(csv_path)
-y_data = df["Room_Temp"][::4]
-test_samples = []
-for i in range(5, 0, -1):
-    test_samples.append(y_data.shift(i))
-test_samples = pd.concat(test_samples, axis=1)[5:].to_numpy()
-
-total_samples = len(test_samples)
-print(f"Total samples to process: {total_samples}")
-
-# --- OPEN SERIAL ---
+# --- 2. LOAD DATA ---
 try:
-    ser = serial.Serial(PORT, BAUD, timeout=1)
-    ser.flushInput()
-    ser.flushOutput()
-    print(f"Connected to {PORT}. Waiting for MCU...")
+    df = pd.read_csv(csv_path)
+    y = df["Room_Temp"][::4] # Resample to 1-hour intervals
+    prev_values_count = 5
+
+    X = pd.DataFrame()
+    for i in range(prev_values_count, 0, -1):
+        X["t-" + str(i)] = y.shift(i)
+
+    X = X[prev_values_count:]
+    y = y[prev_values_count:]
 except Exception as e:
-    print(f"Error: {e}")
+    print(f"Error loading CSV: {e}")
     exit()
 
-# --- PROCESSING LOOP ---
-# We use range(total_samples) so it stops when the data ends
-for i in range(total_samples):
-    found_packet = False
-    pc_prediction = 0.0
+# --- 3. TRAIN MODEL ---
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
-    while not found_packet:
-        char = ser.read(1)
-        if char == b'S':
-            suffix = ser.read(2)
-            header = "S" + suffix.decode('ascii', errors='ignore')
-            
-            if header == "STR":
-                # 1. Send Data to MCU
-                sample = test_samples[i].astype(np.float32)
-                ser.write(sample.tobytes())
-                
-                # 2. Calculate PC Prediction
-                pred = linear.predict(sample.reshape(1, -1))
-                pc_prediction = float(np.ravel(pred)[0])
-                
-                # 3. Wait for MCU to send result back (STW)
-                # We loop briefly to find the STW response
-                for _ in range(100): 
-                    res_char = ser.read(1)
-                    if res_char == b'S':
-                        res_suffix = ser.read(2)
-                        if res_suffix == b'TW':
-                            ser.read(1) # skip type
-                            ser.read(4) # skip length
-                            payload = ser.read(4)
-                            mcu_prediction = struct.unpack('f', payload)[0]
-                            
-                            # 4. Print Comparison
-                            status = "MATCH ✅" if abs(pc_prediction - mcu_prediction) < 0.05 else "MISMATCH ❌"
-                            print(f"Sample {i+1}/{total_samples}: PC: {pc_prediction:.4f} | MCU: {mcu_prediction:.4f} | {status}")
-                            
-                            found_packet = True
-                            break
-    
-print("\n" + "="*30)
-print("TEST COMPLETE: All samples processed.")
-print("="*30)
-ser.close()
+# Use the sklearn2c version of the model
+model = LinearRegressor()
+
+# sklearn2c uses the .train() method (as shown in book Listing 7.1)
+# This fits the model AND saves it to the path automatically
+print("Training model...")
+model.train(X_train.to_numpy(), y_train.to_numpy(), save_path=model_save_path)
+
+# --- 4. EVALUATION & PLOT ---
+y_test_predict = model.predict(X_test.to_numpy())
+
+plt.figure(figsize=(10, 5))
+plt.plot(y_test.to_numpy()[:100], label="Actual", color="black")
+plt.plot(y_test_predict[:100], label="Predicted", color="blue", linestyle="--")
+plt.title("Temperature Prediction Training Success")
+plt.legend()
+plt.show()
+
+mae_test = mean_absolute_error(y_test, y_test_predict)
+print(f"Test set Error (RMSE): {np.sqrt(mae_test):.4f}")
+print(f"Model saved correctly for sklearn2c at: {model_save_path}")
