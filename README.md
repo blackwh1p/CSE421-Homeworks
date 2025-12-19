@@ -24,5 +24,13 @@ CSE421-Homeworks/
 │ └── hw2_report.md or hw2_report.pdf/ # Homework 2 Report
 │
 │
+├── homework3/
+│ ├── question1/ # Estimating Future Temperature Values wirh Linear Regression
+│ ├── question2/ # Human Activity Recognition via Accelerometer Data with Single Nueron
+│ ├── question3/ # Keyword Spotting from Audio Signals on with Single Neuron
+│ ├── question4/ # Handwritten Digit Recognition from Digital Images with Single Neuron
+│ └── hw3_report.md or hw3_report.pdf/ # Homework 3 Report
+│
+│
 └── README.md # (This file)
 ```
