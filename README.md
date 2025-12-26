@@ -25,12 +25,20 @@ CSE421-Homeworks/
 │
 │
 ├── homework3/
-│ ├── question1/ # Estimating Future Temperature Values wirh Linear Regression
+│ ├── question1/ # Estimating Future Temperature Values with Linear Regression
 │ ├── question2/ # Human Activity Recognition via Accelerometer Data with Single Nueron
 │ ├── question3/ # Keyword Spotting from Audio Signals on with Single Neuron
 │ ├── question4/ # Handwritten Digit Recognition from Digital Images with Single Neuron
 │ └── hw3_report.md or hw3_report.pdf/ # Homework 3 Report
 │
+│
+├── homework4/
+│ ├── question1/ # Human Activity Recognition via Accelerometer Data with with Multiple Neurons
+│ ├── question2/ # Keyword Spotting from Audio Signals with with Multiple Neurons
+│ ├── question3/ # Handwritten Digit Recognition from Digital Images with Multiple Neurons
+│ ├── question4/ # Estimating Future Temperature Values with Multiple Neurons
+│ ├── bonus_question/ # Answer of the Bonus Question
+│ └── hw4_report.md or hw4_report.pdf/ # Homework 4 Report
 │
 └── README.md # (This file)
 ```
