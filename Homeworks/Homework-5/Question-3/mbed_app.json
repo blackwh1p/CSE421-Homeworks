@@ -1,0 +1,33 @@
+{
+    "requires": ["bare-metal"],
+    "macros": [
+        "TF_LITE_STATIC_MEMORY"
+    ],
+    "target_overrides": {
+        "*": {
+            "target.c_lib": "std",
+            "target.cxx_lib": "std",
+            "target.printf_lib": "std",
+            "platform.stdio-minimal-console-only": false,
+            "target.stack_size": 65536,
+            "target.heap_size": 65536,
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-convert-newlines": true,
+            "platform.minimal-printf-enable-floating-point": true,
+            "target.extra_include_paths": [
+                ".",
+                "Extra/CMSIS-DSP/Include",
+                "tensorflow",
+                "signal",
+                "third_party",
+                "third_party/flatbuffers/include",
+                "third_party/gemmlowp",
+                "third_party/gemmlowp/fixedpoint",
+                "third_party/gemmlowp/internal",
+                "third_party/kissfft",
+                "third_party/kissfft/tools",
+                "third_party/ruy/ruy/profiler"
+            ]
+        }
+    }
+}
