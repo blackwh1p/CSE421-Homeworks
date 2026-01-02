@@ -33,12 +33,20 @@ CSE421-Homeworks/
 │
 │
 ├── homework4/
-│ ├── question1/ # Human Activity Recognition via Accelerometer Data with with Multiple Neurons
+│ ├── question1/ # Human Activity Recognition via Accelerometer Data with Multiple Neurons
 │ ├── question2/ # Keyword Spotting from Audio Signals with with Multiple Neurons
 │ ├── question3/ # Handwritten Digit Recognition from Digital Images with Multiple Neurons
 │ ├── question4/ # Estimating Future Temperature Values with Multiple Neurons
 │ ├── bonus_question/ # Answer of the Bonus Question
 │ └── hw4_report.md or hw4_report.pdf/ # Homework 4 Report
+│
+│
+├── homework5/
+│ ├── question1/ # Human Activity Recognition via Accelerometer Data with Embedded Neural Networks Applications
+│ ├── question2/ # Keyword Spotting from Audio Signals with with Embedded Neural Networks Applications
+│ ├── question3/ # Handwritten Digit Recognition from Digital Images with Embedded Neural Networks Applications
+│ ├── question4/ # Estimating Future Temperature Values with Embedded Neural Networks Applications
+│ └── hw5_report.md or hw5_report.pdf/ # Homework 5 Report
 │
 └── README.md # (This file)
 ```
