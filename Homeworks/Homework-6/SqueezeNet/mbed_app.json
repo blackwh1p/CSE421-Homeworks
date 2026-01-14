@@ -5,13 +5,13 @@
     ],
     "target_overrides": {
         "*": {
-            "target.c_lib": "small",
+            "target.c_lib": "std",
             "target.cxx_lib": "std",
             "target.printf_lib": "std",
-            "platform.stdio-minimal-console-only": false,
-            "platform.stdio-baud-rate": 115200,
-            "platform.stdio-convert-newlines": true,
-            "platform.minimal-printf-enable-floating-point": true,
+            "target.boot-stack-size": "32768",
+            "target.main-stack-size": "32768",
+            "platform.stdio-baud-rate": "115200",
+            "platform.minimal-printf-enable-floating-point": false,
             "target.extra_include_paths": [
                 ".",
                 "tensorflow",
@@ -19,7 +19,8 @@
                 "third_party/flatbuffers/include",
                 "third_party/gemmlowp",
                 "third_party/gemmlowp/fixedpoint",
-                "third_party/gemmlowp/internal"
+                "third_party/gemmlowp/internal",
+                "third_party/ruy/ruy/profiler"
             ]
         }
     }

@@ -3,11 +3,10 @@
 
 #include <stdint.h>
 
-#define MODEL_OK    0
-#define MODEL_ERROR 1
+#define MODEL_OK 0
+#define MODEL_ERROR -1
 
 int InitModel(const unsigned char* model_data, uint8_t* optional_arena_ptr, int optional_size);
-// Ensure this matches exactly what is in lib_model.cpp
-int RunInferenceInt8(int8_t* input_data, int8_t* output_data); 
+int RunInferenceInt8(int8_t* input_data, int8_t* output_data);
 
 #endif
