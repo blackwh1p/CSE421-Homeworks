@@ -1,0 +1,16 @@
+alternaria_d
+alternaria_mite_d
+bacterial_floundering_d
+blossom_end_rot_d
+caterpillars_p
+fusarium_d
+healthy_fruit
+healthy_leaf
+helicoverpa_armigera_p
+mite_d
+nitrogen_exces_d
+spodoptera_frugiperda_p
+sunburn_d
+tomato_late_blight_d
+tuta_absoluta_p
+virosis_d
