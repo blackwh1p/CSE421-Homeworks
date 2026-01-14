@@ -15,15 +15,11 @@
             "target.extra_include_paths": [
                 ".",
                 "tensorflow",
-                "signal",
                 "third_party",
                 "third_party/flatbuffers/include",
                 "third_party/gemmlowp",
                 "third_party/gemmlowp/fixedpoint",
-                "third_party/gemmlowp/internal",
-                "third_party/kissfft",
-                "third_party/kissfft/tools",
-                "third_party/ruy/ruy/profiler"
+                "third_party/gemmlowp/internal"
             ]
         }
     }
