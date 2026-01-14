@@ -48,5 +48,13 @@ CSE421-Homeworks/
 │ ├── question4/ # Estimating Future Temperature Values with Embedded Neural Networks Applications
 │ └── hw5_report.md or hw5_report.pdf/ # Homework 5 Report
 │
+│
+├── homework6/ # Handwritten Digit Recognition from Digital Images with CNN on microcontroller
+│ ├── EfficientNet/
+│ ├── MobileNet/
+│ ├── ResNet/
+│ ├── SqueezeNet/
+│ └── hw6_report.md or hw6_report.pdf/ # Homework 6 Report
+│
 └── README.md # (This file)
 ```
