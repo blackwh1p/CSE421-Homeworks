@@ -1,0 +1,1039 @@
+{
+    "version": 1,
+    "files": [
+        {
+            "path": "1edited_3.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "1edited_3"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 34,
+                    "y": 238,
+                    "width": 67,
+                    "height": 63
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 162,
+                    "y": 225,
+                    "width": 67,
+                    "height": 64
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 297,
+                    "y": 74,
+                    "width": 58,
+                    "height": 49
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 347,
+                    "y": 315,
+                    "width": 53,
+                    "height": 57
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 172,
+                    "y": 329,
+                    "width": 65,
+                    "height": 62
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 353,
+                    "y": 260,
+                    "width": 47,
+                    "height": 37
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 179,
+                    "y": 43,
+                    "width": 56,
+                    "height": 51
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 97,
+                    "y": 84,
+                    "width": 72,
+                    "height": 66
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 0,
+                    "y": 193,
+                    "width": 71,
+                    "height": 45
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 0,
+                    "y": 232,
+                    "width": 46,
+                    "height": 54
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 86,
+                    "y": 362,
+                    "width": 81,
+                    "height": 38
+                }
+            ]
+        },
+        {
+            "path": "6edited_57.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "6edited_57"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 254,
+                    "y": 110,
+                    "width": 145,
+                    "height": 90
+                }
+            ]
+        },
+        {
+            "path": "9edited_170.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_170"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 310,
+                    "y": 72,
+                    "width": 90,
+                    "height": 122
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 228,
+                    "y": 328,
+                    "width": 86,
+                    "height": 72
+                }
+            ]
+        },
+        {
+            "path": "9edited_177.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_177"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 5,
+                    "y": 62,
+                    "width": 126,
+                    "height": 117
+                }
+            ]
+        },
+        {
+            "path": "9edited_185.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_185"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 327,
+                    "y": 80,
+                    "width": 73,
+                    "height": 143
+                }
+            ]
+        },
+        {
+            "path": "9edited_180.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_180"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 127,
+                    "y": 66,
+                    "width": 115,
+                    "height": 92
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 314,
+                    "y": 77,
+                    "width": 86,
+                    "height": 95
+                }
+            ]
+        },
+        {
+            "path": "9edited_192.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_192"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 68,
+                    "y": 209,
+                    "width": 110,
+                    "height": 122
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 240,
+                    "y": 290,
+                    "width": 148,
+                    "height": 107
+                }
+            ]
+        },
+        {
+            "path": "9edited_194.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "9edited_194"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 89,
+                    "y": 228,
+                    "width": 113,
+                    "height": 109
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 311,
+                    "y": 334,
+                    "width": 64,
+                    "height": 66
+                }
+            ]
+        },
+        {
+            "path": "11edited_241.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "11edited_241"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 49,
+                    "y": 220,
+                    "width": 114,
+                    "height": 106
+                }
+            ]
+        },
+        {
+            "path": "11edited_240.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "11edited_240"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 66,
+                    "y": 320,
+                    "width": 121,
+                    "height": 80
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 297,
+                    "y": 343,
+                    "width": 95,
+                    "height": 57
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 283,
+                    "y": 29,
+                    "width": 102,
+                    "height": 86
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 196,
+                    "y": 315,
+                    "width": 89,
+                    "height": 85
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 157,
+                    "y": 77,
+                    "width": 116,
+                    "height": 101
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 313,
+                    "y": 130,
+                    "width": 83,
+                    "height": 108
+                }
+            ]
+        },
+        {
+            "path": "11edited_246.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "11edited_246"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 43,
+                    "y": 209,
+                    "width": 125,
+                    "height": 88
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 1,
+                    "y": 4,
+                    "width": 77,
+                    "height": 100
+                }
+            ]
+        },
+        {
+            "path": "11edited_254.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "11edited_254"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 37,
+                    "y": 172,
+                    "width": 126,
+                    "height": 109
+                }
+            ]
+        },
+        {
+            "path": "12edited_256.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "12edited_256"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 184,
+                    "y": 97,
+                    "width": 95,
+                    "height": 74
+                }
+            ]
+        },
+        {
+            "path": "13edited_264.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "13edited_264"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 46,
+                    "y": 210,
+                    "width": 139,
+                    "height": 149
+                }
+            ]
+        },
+        {
+            "path": "14edited_276.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "14edited_276"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 309,
+                    "y": 340,
+                    "width": 91,
+                    "height": 60
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 75,
+                    "y": 321,
+                    "width": 95,
+                    "height": 73
+                }
+            ]
+        },
+        {
+            "path": "14edited_291.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "14edited_291"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 10,
+                    "y": 18,
+                    "width": 116,
+                    "height": 115
+                }
+            ]
+        },
+        {
+            "path": "15edited_297.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "15edited_297"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 151,
+                    "y": 124,
+                    "width": 91,
+                    "height": 91
+                }
+            ]
+        },
+        {
+            "path": "21edited_359.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "21edited_359"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 163,
+                    "y": 92,
+                    "width": 56,
+                    "height": 57
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 344,
+                    "y": 275,
+                    "width": 35,
+                    "height": 80
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 235,
+                    "y": 210,
+                    "width": 70,
+                    "height": 52
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 38,
+                    "y": 336,
+                    "width": 66,
+                    "height": 50
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 278,
+                    "y": 24,
+                    "width": 60,
+                    "height": 31
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 108,
+                    "y": 147,
+                    "width": 55,
+                    "height": 51
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 28,
+                    "y": 10,
+                    "width": 70,
+                    "height": 52
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 183,
+                    "y": 14,
+                    "width": 36,
+                    "height": 39
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 217,
+                    "y": 45,
+                    "width": 33,
+                    "height": 51
+                }
+            ]
+        },
+        {
+            "path": "20edited_355.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "20edited_355"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 150,
+                    "y": 153,
+                    "width": 57,
+                    "height": 58
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 311,
+                    "y": 209,
+                    "width": 70,
+                    "height": 52
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 144,
+                    "y": 43,
+                    "width": 47,
+                    "height": 33
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 34,
+                    "y": 272,
+                    "width": 41,
+                    "height": 37
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 269,
+                    "y": 171,
+                    "width": 53,
+                    "height": 40
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 244,
+                    "y": 322,
+                    "width": 61,
+                    "height": 60
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 174,
+                    "y": 297,
+                    "width": 54,
+                    "height": 60
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 221,
+                    "y": 89,
+                    "width": 74,
+                    "height": 60
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 337,
+                    "y": 114,
+                    "width": 59,
+                    "height": 57
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 324,
+                    "y": 28,
+                    "width": 67,
+                    "height": 47
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 119,
+                    "y": 278,
+                    "width": 50,
+                    "height": 65
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 57,
+                    "y": 328,
+                    "width": 70,
+                    "height": 48
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 314,
+                    "y": 262,
+                    "width": 66,
+                    "height": 64
+                }
+            ]
+        },
+        {
+            "path": "22edited_367.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "22edited_367"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 12,
+                    "y": 213,
+                    "width": 66,
+                    "height": 48
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 363,
+                    "y": 188,
+                    "width": 37,
+                    "height": 67
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 24,
+                    "y": 279,
+                    "width": 69,
+                    "height": 44
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 5,
+                    "y": 359,
+                    "width": 82,
+                    "height": 41
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 223,
+                    "y": 99,
+                    "width": 61,
+                    "height": 51
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 144,
+                    "y": 327,
+                    "width": 50,
+                    "height": 53
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 118,
+                    "y": 97,
+                    "width": 47,
+                    "height": 52
+                }
+            ]
+        },
+        {
+            "path": "25edited_412.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "25edited_412"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 158,
+                    "y": 247,
+                    "width": 180,
+                    "height": 115
+                }
+            ]
+        },
+        {
+            "path": "25edited_416.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "25edited_416"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 124,
+                    "y": 96,
+                    "width": 163,
+                    "height": 99
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 221,
+                    "y": 262,
+                    "width": 144,
+                    "height": 117
+                }
+            ]
+        },
+        {
+            "path": "25edited_426.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "25edited_426"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 148,
+                    "y": 221,
+                    "width": 148,
+                    "height": 108
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 128,
+                    "y": 303,
+                    "width": 111,
+                    "height": 97
+                }
+            ]
+        },
+        {
+            "path": "25edited_436.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "25edited_436"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 181,
+                    "y": 288,
+                    "width": 134,
+                    "height": 111
+                }
+            ]
+        },
+        {
+            "path": "25edited_439.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "25edited_439"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 36,
+                    "y": 203,
+                    "width": 135,
+                    "height": 117
+                }
+            ]
+        },
+        {
+            "path": "26edited_477.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "26edited_477"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 93,
+                    "y": 144,
+                    "width": 154,
+                    "height": 135
+                }
+            ]
+        },
+        {
+            "path": "26edited_482.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "26edited_482"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 131,
+                    "y": 271,
+                    "width": 159,
+                    "height": 129
+                }
+            ]
+        },
+        {
+            "path": "27edited_545.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "27edited_545"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 40,
+                    "y": 250,
+                    "width": 126,
+                    "height": 113
+                }
+            ]
+        },
+        {
+            "path": "26edited_488.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "26edited_488"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 154,
+                    "y": 169,
+                    "width": 137,
+                    "height": 122
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 10,
+                    "y": 236,
+                    "width": 134,
+                    "height": 106
+                }
+            ]
+        },
+        {
+            "path": "26edited_489.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "26edited_489"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 17,
+                    "y": 100,
+                    "width": 123,
+                    "height": 114
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 163,
+                    "y": 314,
+                    "width": 141,
+                    "height": 86
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 114,
+                    "y": 0,
+                    "width": 130,
+                    "height": 77
+                }
+            ]
+        },
+        {
+            "path": "27edited_562.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "27edited_562"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 147,
+                    "y": 271,
+                    "width": 158,
+                    "height": 113
+                }
+            ]
+        },
+        {
+            "path": "27edited_571.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "27edited_571"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 135,
+                    "y": 107,
+                    "width": 137,
+                    "height": 119
+                }
+            ]
+        },
+        {
+            "path": "26edited_506.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "26edited_506"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 38,
+                    "y": 0,
+                    "width": 128,
+                    "height": 87
+                },
+                {
+                    "label": "fruitfly",
+                    "x": 0,
+                    "y": 88,
+                    "width": 135,
+                    "height": 113
+                }
+            ]
+        },
+        {
+            "path": "28edited_603.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "28edited_603"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 293,
+                    "y": 59,
+                    "width": 80,
+                    "height": 68
+                }
+            ]
+        },
+        {
+            "path": "28edited_612.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "28edited_612"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 32,
+                    "y": 107,
+                    "width": 112,
+                    "height": 86
+                }
+            ]
+        },
+        {
+            "path": "30edited_622.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "30edited_622"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 15,
+                    "y": 86,
+                    "width": 133,
+                    "height": 160
+                }
+            ]
+        },
+        {
+            "path": "30edited_629.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "30edited_629"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 289,
+                    "y": 149,
+                    "width": 111,
+                    "height": 151
+                }
+            ]
+        },
+        {
+            "path": "30edited_630.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "30edited_630"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 40,
+                    "y": 6,
+                    "width": 147,
+                    "height": 136
+                }
+            ]
+        },
+        {
+            "path": "30edited_637.jpg",
+            "category": "testing",
+            "label": {
+                "type": "label",
+                "label": "30edited_637"
+            },
+            "boundingBoxes": [
+                {
+                    "label": "fruitfly",
+                    "x": 114,
+                    "y": 61,
+                    "width": 109,
+                    "height": 159
+                }
+            ]
+        }
+    ]
+}

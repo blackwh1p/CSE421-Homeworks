@@ -1,0 +1,85 @@
+import serial
+import time
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.datasets import mnist
+
+# ---------------------------------------------------------
+# CONFIGURATION
+# ---------------------------------------------------------
+SERIAL_PORT = 'COM6'   
+BAUD_RATE = 115200
+TIMEOUT_SEC = 5       
+
+IMG_WIDTH = 32
+IMG_HEIGHT = 32
+CHANNELS = 3           
+IMG_SIZE = IMG_WIDTH * IMG_HEIGHT * CHANNELS
+
+def preprocess_mnist_for_mobilenet(images):
+    # Resize 28x28 -> 32x32 RGB
+    images = tf.expand_dims(images, axis=-1)
+    images = tf.image.grayscale_to_rgb(images)
+    images = tf.image.resize(images, [IMG_WIDTH, IMG_HEIGHT])
+    # Send as raw uint8 [0-255]
+    return tf.cast(images, tf.uint8).numpy()
+
+def test_uart():
+    print("[INFO] Loading MNIST...")
+    (x_train, y_train), (x_test, y_test) = mnist.load_data()
+    
+    num_images = 50
+    x_test = x_test[:num_images]
+    y_test = y_test[:num_images]
+
+    print("[INFO] Preprocessing...")
+    processed_images = preprocess_mnist_for_mobilenet(x_test)
+
+    try:
+        ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=TIMEOUT_SEC)
+        print(f"[INFO] Connected to {SERIAL_PORT}")
+        time.sleep(2)
+    except Exception as e:
+        print(f"[ERROR] Serial error: {e}")
+        return
+
+    correct_count = 0
+    print("-" * 50)
+    print(f"{'Index':<10} | {'True':<10} | {'Pred':<10} | {'Status'}")
+    print("-" * 50)
+
+    for i in range(num_images):
+        flat_img = processed_images[i].flatten().tobytes()
+
+        ser.reset_input_buffer()
+        ser.reset_output_buffer()
+        
+        chunk_size = 64
+        for k in range(0, len(flat_img), chunk_size):
+            ser.write(flat_img[k:k+chunk_size])
+            time.sleep(0.002)
+
+        time.sleep(0.1) 
+
+        # Cevap bekle
+        response = ser.read(1)
+        
+        true_label = int(y_test[i])
+        status = "FAIL"
+        pred_label = "TIMEOUT"
+
+        if len(response) == 1:
+            pred_label = int.from_bytes(response, byteorder='little', signed=True)
+            if pred_label == true_label:
+                status = "PASS"
+                correct_count += 1
+        
+        print(f"{i:<10} | {true_label:<10} | {pred_label:<10} | {status}")
+
+    accuracy = (correct_count / num_images) * 100
+    print("-" * 50)
+    print(f"[RESULT] Accuracy: {accuracy:.2f}%")
+    ser.close()
+
+if __name__ == "__main__":
+    test_uart()
